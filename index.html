@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan Selamat Pernikahan</title>
+    <!-- Link ke CSS Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: url('https://source.unsplash.com/1600x900/?wedding') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero-section p {
+            font-size: 1.5rem;
+        }
+        .card {
+            margin-top: -100px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .btn-play {
+            margin-top: 20px;
+        }
+        .modal-content {
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+        }
+        .modal-dialog {
+            max-width: 90vw;
+            height: 90vh;
+        }
+        .modal-body {
+            padding: 0;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="container">
+            <h1>Selamat Menempuh Hidup Baru!</h1>
+            <p>Kepada M Reihan Ramadhani</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ucapan Selamat</h5>
+                        <p class="card-text">
+                            Selamat atas pernikahan kalian! Semoga hari bahagia ini menjadi awal dari perjalanan hidup yang penuh cinta dan kebahagiaan. Semoga kalian selalu saling mendukung, mencintai, dan menghargai satu sama lain dalam setiap langkah yang diambil. Doa kami selalu menyertai kalian berdua.
+                        </p>
+                        <p class="text-right">
+                            Hormat kami,<br>
+                            [kolik]
+                        </p>
+                        <button type="button" class="btn btn-primary btn-play" data-toggle="modal" data-target="#videoModal">
+                            Tonton Video Ucapan
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal untuk video -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <video controls>
+                        <source src="KOLIK.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skrip JS Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
